@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="design.css">
+  </head>
+  <body>
+
+    <form action="/action_page.php" class="form-machine">
+      <p id="pInsertedCoin" class="p-inserted-coin">Inserted Coin</p>
+      <div class="div-total-coin">
+        <p id="pTotalCoin" class="p-total-coin">0</p>
+      </div>
+      <div class="div-btn-price">
+        <input
+          type="button"
+          value="5"
+          class="btn-five-pesos"
+          onclick="addCoin(5)"
+        />
+        <input
+          type="button"
+          value="10"
+          class="btn-ten-pesos"
+          onclick="addCoin(10)"
+        />
+        <input
+          type="button"
+          value="20"
+          class="btn-twenty-pesos"
+          onclick="addCoin(20)"
+        />
+      </div>
+      <input
+        type="button"
+        value="Change"
+        class="btn-change"
+        onclick="btnChange()"
+      />
+      <div class="div-drinks">
+        <div>
+          <label class="lbl-cola-price">
+            P20
+            <input
+              type="button"
+              value="Cola"
+              class="btn-cola"
+              onclick="btnDrink('Cola',20)"
+            />
+          </label>
+        </div>
+        <div style="text-align: center">
+          <label class="lbl-pepsi-price">
+            P15
+            <input
+              type="button"
+              value="Pepsi"
+              class="btn-pepsi"
+              onclick="btnDrink('Pepsi',15)"
+            />
+          </label>
+        </div>
+        <div>
+          <label class="lbl-saida-price">
+            P18
+            <input
+              type="button"
+              value="Saida"
+              class="btn-saida"
+              onclick="btnDrink('Saida',18)"
+            />
+          </label>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 15px">
+        <input
+          id="btnGet"
+          type="button"
+          value=" "
+          style="width: 52px"
+          class="btn-get"
+          onclick="btnGetDrink()"
+        />
+      </div>
+    </form>
+    <script src="myscripts.js"></script>
+  </body>
+</html>
